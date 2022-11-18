@@ -4,7 +4,7 @@ public class Nurse extends HospitalEmployee implements MedicalDuties{
 
     private int numPatients;
 
-    public Nurse(String employeeNumber, String name, int i) {
+    public Nurse(String employeeNumber, String name, int NumberOfPatients) {
 
         super(employeeNumber, name);
     }

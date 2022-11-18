@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
+import java.util.*;
 public class Hospital {
 
 
@@ -42,5 +42,37 @@ public class Hospital {
 
     public Collection<Patient> getAllPatients() {
         return patientList.values();
+    }
+
+
+    public void addEmployee(Doctor doctor) {
+    }
+
+    public void addEmployee(Nurse nurse) {
+    }
+
+    public void addEmployee(Receptionist receptionist) {
+    }
+
+    public void addEmployee(Janitor janitor) {
+    }
+
+    public void showPayRates() {
+    }
+
+    public void showAllMedicalPersonal() {
+    }
+
+    public void showAllEmployees() {
+        ArrayList<Employee>employeeList = new ArrayList<>(employees.values());
+        Collections.sort(employeeList);
+        for(Employee employee: employeeList){
+            System.out.println(employee.getEmpName() + " " + employee.getEmpNumber());
+        }
+
+
+//        for(Employee employee: employees.values()) {
+//            System.out.println(employee.getEmpName() + " " + employee.getEmpNumber());
+//        }
     }
 }
